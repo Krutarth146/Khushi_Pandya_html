@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tag</title>
+</head>
+<body align="center">
+
+    <h1>Registration Form</h1>
+
+    <form autocomplete="off" action="third.html" method="POST" enctype="form-data/multipart">
+        <fieldset>
+            <legend align="center">Personal Info.</legend>
+            <br><br>
+        <div>
+            <label for="fname1">Name: </label>
+            <input type="text" placeholder="Enter First Name" value="khushi" name="fname" id="fname1" required>
+        </div><br><br>
+        <div>
+            <label for="lname1">Surname: </label>
+            <input type="text" placeholder="Enter Surname" name="lname" id="lname1">
+        </div><br><br>
+
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" placeholder="Enter Email" name="email" id="email">
+        </div><br><br>
+
+        <div>
+            <label for="pass1">Password: </label>
+            <input type="password" placeholder="Enter Password" name="password" id="pass1">
+        </div><br><br>
+
+
+        <div>
+            <label for="car1">Choose Car: </label>
+
+            <select name="car_choice" id="car1">
+                <optgroup label="Cars">
+                    <option value="alto">Alto</option>
+                    <option value="creta" selected>Creta</option>
+                    <option value="innova">Innova</option>
+                    <option value="balano" disabled>Balano</option>
+                </optgroup>
+
+
+                <optgroup label="Countries">
+                    <option value="India">India</option>
+                    <option value="uk" selected>United Kingdom</option>
+                    <option value="usa">United states of America</option>
+                    <option value="aus">Australia</option>
+                </optgroup>
+            </select>
+        </div><br><br>
+    </fieldset>
+
+<br>
+
+<fieldset>
+    <legend>Addition Info.</legend>
+<br><br>
+        <div>
+            <label for="hobby">Hobby: </label>
+            <input type="checkbox" id="hobby" name="hobby" >Dancing
+            <input type="checkbox" id="hobby" name="hobby" >Cooking
+            <input type="checkbox" id="hobby" name="hobby" >Reading
+        </div><br><br>
+
+        <div>
+            <label for="gender">Gender: </label>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+        </div><br><br>
+
+
+        <div>
+            <input type="file">
+        </div><br><br>
+        <div>
+            <label for="birth">Enter BirthDate: </label>
+            <input type="date" name="birth" id="birth">
+        </div><br><br>
+        <div>
+            <label for="comment">Enter any suggestions: </label>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        </div><br><br>
+        <div>
+            <label for="bdate">Birth date with Time: </label>
+            <input type="datetime-local" id="bdate">
+        </div><br><br>
+        <div>
+            <label for="bdate">Month Name: </label>
+            <input type="month" id="bdate">
+        </div><br><br>
+        <div>
+            <label for="age">Age: </label>
+            <input type="number" id="age" min="18" max="100" step="5">
+        </div><br><br>
+        <div>
+            <label for="temp">Temperature: </label>
+            <input type="range" id="temp" min="18" max="100" title="temp">
+        </div><br><br>
+
+    </fieldset>
+    
+
+    <br>
+    <fieldset>
+        <legend>Contact Info.</legend>
+<br><br>
+
+   
+        <div>
+            <label for="age">Search: </label>
+            <input type="search" id="age">
+        </div><br><br>
+        <div>
+            <label for="contact">Contact No.: </label>
+            <input type="tel" id="contact">
+        </div><br><br>
+        <div>
+            <label for="url1">Enter Url: </label>
+            <input type="url" id="url1">
+        </div><br><br>
+        <div>
+            <label for="week">Enter Week: </label>
+            <input type="week" id="week" name="week" required>
+        </div><br><br>
+
+
+
+        <div>
+            <input type="submit" value="Register">
+        </div>
+        <br><br>
+        <div>
+            <input type="button" value="Send Data">
+        </div>
+        <br><br>
+        <div>
+            <input type="reset" value="Reset">
+        </div>
+        <br><br>
+
+    </fieldset>
+    </form>
+</body>
+</html>
